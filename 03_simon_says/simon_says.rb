@@ -21,3 +21,7 @@ end
 def start_of_word(str, count = 1)
   str[0, count]
 end
+
+def first_word(str)
+  str.split[0]
+end
