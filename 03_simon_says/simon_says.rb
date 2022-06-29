@@ -17,3 +17,7 @@ def repeat(str, count = 2)
 
   output
 end
+
+def start_of_word(str, count = 1)
+  str[0, count]
+end
