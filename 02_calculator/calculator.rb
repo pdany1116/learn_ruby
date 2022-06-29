@@ -34,3 +34,7 @@ def multiply(*args)
 
   total
 end
+
+def power(base, exp)
+  base**exp
+end
