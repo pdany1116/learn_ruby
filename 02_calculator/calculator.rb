@@ -38,3 +38,9 @@ end
 def power(base, exp)
   base**exp
 end
+
+def factorial(n)
+  return 1 if [0, 1].include?(n)
+
+  multiply([*2..n])
+end
