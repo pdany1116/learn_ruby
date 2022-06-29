@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-SMALL_WORDS = %w[and the over a an in of]
+SMALL_WORDS = %w[and the over a an in of].freeze
 
 def echo(str)
   str
