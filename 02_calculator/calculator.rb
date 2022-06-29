@@ -17,3 +17,20 @@ def sum(array)
 
   total
 end
+
+def multiply(*args)
+  total = 1
+
+  array = case args.size
+          when 1
+            args[0]
+          else
+            args
+          end
+
+  array.each do |i|
+    total *= i
+  end
+
+  total
+end

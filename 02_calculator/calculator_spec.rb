@@ -78,11 +78,13 @@ end
 # write tests and code for the following:
 
 describe "#multiply" do
+  it "multiplies two numbers" do
+    multiply(2, 3).should == 6
+  end
 
-  it "multiplies two numbers"
-
-  it "multiplies several numbers"
-
+  it "multiplies several numbers" do
+    multiply([2, 3, 6, 10]).should == 360
+  end
 end
 
 describe "#power" do
