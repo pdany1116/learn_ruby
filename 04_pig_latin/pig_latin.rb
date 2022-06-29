@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-PHONEMES = %w[qu]
+PHONEMES = %w[qu].freeze
 
 def translate(str)
   str.split.map! { |word| translate_word(word) }.join(' ')
