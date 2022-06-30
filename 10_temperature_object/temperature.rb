@@ -24,10 +24,22 @@ class Temperature
   end
 
   def self.from_celsius(degrees)
-    Temperature.new(:c => degrees)
+    Celsius.new(degrees)
   end
 
   def self.from_fahrenheit(degrees)
-    Temperature.new(:f => degrees)
+    Fahrenheit.new(degrees)
+  end
+end
+
+class Celsius < Temperature
+  def initialize(degrees)
+    super(:c => degrees)
+  end
+end
+
+class Fahrenheit < Temperature
+  def initialize(degrees)
+    super(:f => degrees)
   end
 end
