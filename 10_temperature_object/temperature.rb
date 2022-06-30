@@ -22,4 +22,12 @@ class Temperature
       @options[:c]
     end
   end
+
+  def self.from_celsius(degrees)
+    Temperature.new(:c => degrees)
+  end
+
+  def self.from_fahrenheit(degrees)
+    Temperature.new(:f => degrees)
+  end
 end
